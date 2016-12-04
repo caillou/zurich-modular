@@ -31,4 +31,18 @@ html
     link(rel='shortcut icon', href='/favicon.ico')
 
   body
-    != yield
+    
+    .dynamic-layout
+      .dynamic-layout__element.dynamic-layout__element--logo
+        include _partials/logo.small.svg    
+        include _partials/logo.large.svg
+      .dynamic-layout__element.dynamic-layout__element--menu
+        ul
+          li
+            a.navigation-link(href="http://", target="_blank") link
+      .dynamic-layout__element.dynamic-layout__element--menu-link
+        a.navigation-link(href="#", target="_blank") link
+      .dynamic-layout__element.dynamic-layout__element--main
+        != yield
+      .dynamic-layout__element.dynamic-layout__element--footer
+        div footer

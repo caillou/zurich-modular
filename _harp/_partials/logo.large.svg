@@ -1,0 +1,10 @@
+<svg class="logo logo--large" width="212" height="215" viewBox="200 95 212 215" xmlns="http://www.w3.org/2000/svg">
+  <title>
+    Zurich Modular Logo
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#333" d="M327 220v84h-35v-84h-84v90h6v-84h72v84h47v-84h72v84h6v-90"/>
+    <path d="M325 182c0-2.762 2.238-5 5-5s5 2.238 5 5-2.238 5-5 5-5-2.238-5-5z" fill="#06C"/>
+    <path fill="#333" d="M327 95v48h78v42h6v-48h-78V95m-41 90h-91.242l84-84H208v-6h84l.032 7.21-76.79 76.79H292"/>
+  </g>
+</svg>

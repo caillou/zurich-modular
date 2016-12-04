@@ -1,0 +1,16 @@
+.logo {
+}
+
+.logo--small {
+  margin-left: -2px;
+  @include mq($from: 'm') {
+    display: none;
+  }
+}
+
+.logo--large {
+  margin-left: -8px;
+  @include mq($until: 'm') {
+    display: none;
+  }
+}

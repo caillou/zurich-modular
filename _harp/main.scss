@@ -23,6 +23,12 @@
 @import "../node_modules/inuitcss/tools/tools.font-size";
 @import "../node_modules/inuitcss/tools/tools.clearfix";
 @import "../node_modules/inuitcss/tools/tools.hidden";
+$mq-breakpoints: (
+    // s:  320px,
+    m:  740px
+    // l: 980px,
+    // xl:    1300px
+);
 @import "../node_modules/sass-mq/mq";
 
 
@@ -41,10 +47,12 @@
 
 // ELEMENTS
 @import "../node_modules/inuitcss/elements/elements.page";
-@import "./_scss/elements.page"
-// @import "../node_modules/inuitcss/elements/elements.headings";
-// @import "../node_modules/inuitcss/elements/elements.images";
+@import "../node_modules/inuitcss/elements/elements.images";
+@import "../node_modules/inuitcss/elements/elements.headings";
 // @import "../node_modules/inuitcss/elements/elements.tables";
+@import "./_scss/elements.page";
+@import "./_scss/elements.svg";
+@import "./_scss/elements.link";
 
 
 
@@ -53,13 +61,14 @@
 // OBJECTS
 //
 // Uncomment and add to this section as necessary.
-// @import "../node_modules/inuitcss/objects/objects.wrapper";
+$inuit-wrapper-width: 1024px;
+@import "../node_modules/inuitcss/objects/objects.wrapper";
 // @import "../node_modules/inuitcss/objects/objects.layout";
 // @import "../node_modules/inuitcss/objects/objects.media";
 // @import "../node_modules/inuitcss/objects/objects.flag";
 // @import "../node_modules/inuitcss/objects/objects.list-bare";
 // @import "../node_modules/inuitcss/objects/objects.list-inline";
-// @import "../node_modules/inuitcss/objects/objects.box";
+@import "../node_modules/inuitcss/objects/objects.box";
 // @import "../node_modules/inuitcss/objects/objects.block";
 // @import "../node_modules/inuitcss/objects/objects.ratio";
 // @import "../node_modules/inuitcss/objects/objects.crop";
@@ -67,14 +76,13 @@
 // @import "../node_modules/inuitcss/objects/objects.pack";
 
 
-
-
-
 // COMPONENTS
 //
 // Build and include your project’s UI Compoments here.
 // @import "../node_modules/inuitcss/components/example.components.buttons";
-
+@import "./_scss/components.logo";
+@import "./_scss/components.navigation-link";
+@import "./_scss/components.dynamic-layout";
 
 
 
