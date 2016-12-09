@@ -67,7 +67,7 @@ $inuit-wrapper-width: 1024px;
 // @import "../node_modules/inuitcss/objects/objects.media";
 // @import "../node_modules/inuitcss/objects/objects.flag";
 // @import "../node_modules/inuitcss/objects/objects.list-bare";
-// @import "../node_modules/inuitcss/objects/objects.list-inline";
+@import "../node_modules/inuitcss/objects/objects.list-inline";
 @import "../node_modules/inuitcss/objects/objects.box";
 // @import "../node_modules/inuitcss/objects/objects.block";
 // @import "../node_modules/inuitcss/objects/objects.ratio";
@@ -81,7 +81,7 @@ $inuit-wrapper-width: 1024px;
 // Build and include your project’s UI Compoments here.
 // @import "../node_modules/inuitcss/components/example.components.buttons";
 @import "./_scss/components.logo";
-@import "./_scss/components.navigation-link";
+@import "./_scss/components.navigation";
 @import "./_scss/components.dynamic-layout";
 
 
