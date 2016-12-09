@@ -1,5 +1,16 @@
 a {
-  &, &:visited {
-    color: $color-text;
+  transition: color .3s;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+  &, &:visited, &:hover, &:focus {
+    color: $color-hover;
   }
+  &:hover, &:focus {
+    text-decoration: underline;
+    .a11y--focus-styles-disabled & {
+      outline: 0;
+    }
+  }
+
 }

@@ -36,13 +36,25 @@ html
       .dynamic-layout__element.dynamic-layout__element--logo
         include _partials/logo.small.svg    
         include _partials/logo.large.svg
-      .dynamic-layout__element.dynamic-layout__element--menu
-        ul
-          li
-            a.navigation-link(href="http://", target="_blank") link
       .dynamic-layout__element.dynamic-layout__element--menu-link
-        a.navigation-link(href="#", target="_blank") link
+        ul.navigation(id="navigation")
+          li.navigation__item
+            a.navigation__link.navigation__link--menu(href="#navigation", tabindex="-1", data-navigation-button)
+              span.navigation__link-text.navigation__link-text--close Close
+              span.navigation__link-text Navigation
+      .dynamic-layout__element.dynamic-layout__element--menu
+        ul.navigation(id="navigation")
+          li.navigation__item
+            a.navigation__link(href="/") Home
+          li.navigation__item
+            a.navigation__link(href="/call-for-works/") Call for works
+          li.navigation__item
+            a.navigation__link(href="/code-of-conduct/") Code of Conduct
+
+
       .dynamic-layout__element.dynamic-layout__element--main
         != yield
       .dynamic-layout__element.dynamic-layout__element--footer
         div footer
+  
+  script(type="application/javascript", src="/assets/js/main.js")

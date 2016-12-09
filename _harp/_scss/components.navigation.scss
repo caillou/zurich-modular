@@ -1,0 +1,58 @@
+.navigation {
+  text-transform: lowercase;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation__item {
+  @include mq($from: 'm') {
+    display: inline-block;
+  }
+}
+.navigation__link {
+  @include inuit-font-size(24px);
+  position: relative;
+  display: block;
+  transition: 0.2s;
+
+  &,
+  &:visited,
+  .a11y--focus-styles-disabled &:focus {
+    color: $color-text;
+  }
+  &:hover,
+  &:focus,
+  &:focus {
+    text-decoration: none;
+    color: $color-hover;
+  }
+  .a11y--focus-styles-enabled &:focus {
+    text-decoration: underline;
+  }
+
+  @include mq($until: 'm') {
+    line-height: 2em;
+  }
+  @include mq($from: 'm') {
+    margin-left: $inuit-global-spacing-unit;
+    &:first {
+      margin-left: 0;
+    }
+  }
+}
+
+.navigation__link--menu {
+  line-height: .75em;
+}
+
+.dynamic-layout--open-navigation .navigation__link-text {
+  display: none;
+}
+
+.navigation__link-text--close {
+  display: none;
+}
+.dynamic-layout--open-navigation .navigation__link-text.navigation__link-text--close {
+  display: inline;
+}
